@@ -3,7 +3,7 @@ const BtnGenerate = document.querySelector('#BtnGenerate');
 
 
 const Quote = async () => {
-const api = `http://api.quotable.io/random`;
+const api = `https://api.quotable.io/random`;
 const res = await fetch(api);
 const data = await res.json();
  const content = document.querySelector('.content h5');
