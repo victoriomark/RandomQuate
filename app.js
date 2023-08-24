@@ -19,7 +19,7 @@ const data = await res.json();
 //add event
 BtnGenerate.addEventListener("click", () => {
     BtnGenerate.classList.add('animate')
-    BtnGenerate.textContent = 'Loading'
+    BtnGenerate.textContent = 'Loading...'
    const Timeout = setTimeout( () => {
     Quote();
     BtnGenerate.classList.remove('animate');
