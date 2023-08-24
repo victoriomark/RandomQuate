@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #537188;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    padding: 10px;
+    min-height: 10rem;
+    display: grid;
+    place-items: center;
+    background-color: #001C30;
+    border-radius: 10px;
+    color: rgb(218, 225, 230);
+    width: 50%;
+}
+.content{
+    border-left: solid #FF9EAA;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.content h6{
+    padding: 5px;
+    border-bottom: solid 2px #1B9C85;
+}
+.container button{
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1B9C85;
+    font-weight: 900;
+    color: #E8F6EF;
+    position: relative;
+    overflow: hidden;
+}
+h6 span{
+    color: #FF9EAA;
+}
+button:active{
+    transform: scale(1.04);
+}
+.container #tags{
+    color: #E8F6EF;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.animate::after{
+ content: '';
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ background-color: #FF9EAA;
+ position: absolute;
+ left: 0%;
+ animation-name: animates;
+ animation-duration: 1.5s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes animates{
+    50%{
+        left: 100%;
+    }
+    50%{
+        background-color: #FFFAF4;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.container{
+    width: 100%;
+}
+
+
+}
