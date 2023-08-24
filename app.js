@@ -13,6 +13,9 @@ const data = await res.json();
    content.innerHTML = data.content
    Author.innerHTML = ` <span> Author:</span> ${data.author} `;
    tags.innerHTML = data.tags
+   
+   // Passing data for copy
+
   }
 
 

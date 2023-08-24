@@ -21,6 +21,7 @@ body{
     border-radius: 10px;
     color: rgb(218, 225, 230);
     width: 50%;
+    position: relative;
 }
 .content{
     border-left: solid #FF9EAA;
