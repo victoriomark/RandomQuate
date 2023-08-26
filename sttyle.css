@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #537188;
+    background-color: rgb(47, 47, 68);
     font-family: 'Poppins',sans-serif;
 }
 .container{
@@ -75,6 +75,19 @@ button:active{
  animation-iteration-count: infinite;
 }
 
+.animateB::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FF9EAA;
+    position: absolute;
+    right: 0%;
+    animation-name: animateB;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+   }
+
 @keyframes animates{
     50%{
         left: 100%;
@@ -83,7 +96,23 @@ button:active{
     100%{
         background-color: #FFFAF4;
     }
+
+ 
 }
+
+
+@keyframes animateB{
+    50%{
+        right: 100%;
+        background-color: orangered;
+    }
+    100%{
+        background-color: greenyellow;
+    }
+
+ 
+}
+
 
 
 

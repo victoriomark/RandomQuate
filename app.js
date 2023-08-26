@@ -22,13 +22,16 @@ const data = await res.json();
 //add event
 BtnGenerate.addEventListener("click", () => {
     BtnGenerate.classList.add('animate')
-    BtnGenerate.textContent = 'Loading...'
+    BtnGenerate.classList.add('animateB');
+    BtnGenerate.textContent = 'Generating...'
    const Timeout = setTimeout( () => {
     Quote();
     BtnGenerate.classList.remove('animate');
+    BtnGenerate.classList.remove('animateB');
     BtnGenerate.textContent = 'Generate Random Quote';
-   },2000)
+   },3000)
     
 })
+
 
 
